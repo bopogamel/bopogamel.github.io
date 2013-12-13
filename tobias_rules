@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+from tempfile import mkstemp
+from shutil import move
+from os import remove, close
+
+def replace(file_path, pattern, subst):
+    new_file = open('/Users/owenhill/csstory/index.html','w')
+    old_file = open(file_path)
+    for line in old_file:
+        new_file.write(line.replace(pattern, subst))
+    #close temp file
+    new_file.close()
+    old_file.close()
+
+replace('/Users/owenhill/csstory/story', '</head>', '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="script.js"></script><link rel="stylesheet" href="style.css" />\n</head>')

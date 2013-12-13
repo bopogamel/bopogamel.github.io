@@ -1,0 +1,43 @@
+body {
+	font-family: monospace;
+	font-size: 13px;
+	background-color: #1e252c; /* Old browsers */
+	background: -moz-linear-gradient(top, #0d0f12 0%, #1e252c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0d0f12), color-	stop(100%,#1e252c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #0d0f12 0%,#1e252c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #0d0f12 0%,#1e252c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #0d0f12 0%,#1e252c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #0d0f12 0%,#1e252c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0f12', 	endColorstr='#1e252c',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+pre {
+text-shadow: 0 0 8px #FFFFFF;
+	line-height:0.9em;
+}
+
+pre#title:before {
+	content: "CS STORY ";
+	color:#eee;
+}
+
+* { font-family:monospace !important }
+
+#twitter { font-size: 14px; text-decoration:none !important; }
+
+a, #sidebar li {
+    cursor: crosshair;
+	color: #86a8c6 !important;
+}
+a:hover { color: #FFbb55 !important; text-decoration:none !important }
+
+#credits, #share, #snapback {
+	display:none;
+}
+
+.content {
+	width: 600px;
+}
